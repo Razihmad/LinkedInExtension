@@ -1,0 +1,16 @@
+{
+    "manifest_version":2,
+    "name":"Linked AutoConnect",
+    "version":"0.1",
+    "description":"To Connect With LinkedIn Search Result",
+    "icons":{
+        "128":"icon128.png",
+        "48":"icon48.png",
+        "16":"icon16.png"
+    },
+    "permissions":["tabs","https://www.linkedin.com/*"],
+    "browser_action": {  
+        "default_icon": "icon16.png",  
+        "default_popup": "popup.html"  
+    }
+}

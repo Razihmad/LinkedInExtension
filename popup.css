@@ -1,0 +1,7 @@
+.main{
+    box-sizing: border-box;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+}
