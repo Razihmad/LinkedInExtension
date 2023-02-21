@@ -15,7 +15,13 @@ async function  clickBtn(){
             var dismis = document.querySelector('[aria-label="Dismiss"]');
             var  val = document.querySelector('[aria-label="Send now"]');
             if(val==null){
-                dismis.click();
+                var msg = document.querySelector("[aria-label='Other']");
+                msg.click();
+                var connect = document.querySelector('[aria-label="Connect"]');
+                connect.click();
+                await sleep(1000);
+                var btn2 = document.querySelector('[aria-label="Send now"]');
+                btn2.click();
             }
             else{
                 val.click();
