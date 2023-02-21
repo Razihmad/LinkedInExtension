@@ -11,12 +11,12 @@ async function  clickBtn(){
         await sleep(1000);
         if(res=="Connect"){
             btn[i].click();
-            await sleep(2000);
+            await sleep(1000);
             var  val = document.querySelector('[aria-label="Send now"]');
             await sleep(1000);
             val.click();
             console.log("Request Sent");
-            await sleep(2500);
+            await sleep(1000);
         }
     }
 };
