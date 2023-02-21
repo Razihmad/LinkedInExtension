@@ -12,12 +12,18 @@ async function  clickBtn(){
         if(res=="Connect"){
             btn[i].click();
             await sleep(1000);
+            var dismis = document.querySelector('[aria-label="Dismiss"]');
             var  val = document.querySelector('[aria-label="Send now"]');
-            await sleep(1000);
-            val.click();
-            console.log("Request Sent");
-            await sleep(1000);
+            if(val==null){
+                dismis.click();
+            }
+            else{
+                val.click();
+                console.log("Request Sent");
+            }
+                
         }
     }
+    console.log("all done")
 };
 clickBtn();
